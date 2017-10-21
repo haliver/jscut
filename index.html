@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang='ja'>
+<head>
+  <meta charset="UTF-8">
+  <title>jscut</title>
+  <meta name="copyright" content="haliver" />
+  <meta name="description" content="jscut" />
+  <meta name="keywords" content="jscut" />
+  <meta name="author" content="haliver">
+  <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+  <script type="text/javascript" src="jscut.js"></script>
+</head>
+
+<body style="-webkit-user-select: auto;">
+
+<div class="content">
+  <h3>Convert current time to unix time</h3>
+  <p style="font-size:10px;">format is &#8220;1970/10/22 05:50&#8221; or &#8220;2010年1月1日13時10分10秒&#8221;</p>
+  <input type="button" value="Now to unix time" onclick="currentTime()" style="padding: 10px 65px;"><br />
+  <br />
+  <input type="text" id="epochSec" value="" size="26" style="padding:9px 2px;font-size:13px;">
+  <input type="button" value="↓convert unix time↓" onclick="esecToString(epochSec.value)" style="padding:10px 85px;"><br />
+  <br />
+  <input type="text" id="stringSec" value="" size=26 style="padding: 9px 2px;font-size:13px;">
+  <input type="button" value="↑convert unix time↑" onclick="stringToEsec(stringSec.value)" style="padding:10px 85px;"><br />
+</div>
+
+</body>
+</html>
